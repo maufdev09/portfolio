@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 45% 5%;
+  --foreground: 190 38% 96%;
+  --card: 220 35% 8%;
+  --card-foreground: 190 38% 96%;
+  --primary: 174 86% 55%;
+  --primary-foreground: 215 50% 7%;
+  --secondary: 218 28% 14%;
+  --secondary-foreground: 190 38% 96%;
+  --muted: 217 24% 15%;
+  --muted-foreground: 199 16% 67%;
+  --accent: 12 92% 67%;
+  --accent-foreground: 215 50% 7%;
+  --border: 211 24% 20%;
+  --input: 211 24% 20%;
+  --ring: 174 86% 55%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(53, 241, 218, 0.14), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(255, 122, 89, 0.13), transparent 24%),
+    linear-gradient(180deg, #05070d 0%, #0a111a 45%, #06080e 100%);
+  color: hsl(var(--foreground));
+}
+
+::selection {
+  background: rgba(53, 241, 218, 0.35);
+}
+
+.mesh-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
