@@ -41,6 +41,7 @@ const skills = [
 
 export default async function Home() {
   const projects = await getProjects();
+  console.log(projects);
 
   return (
     <main className="min-h-screen overflow-hidden">
