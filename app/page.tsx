@@ -305,7 +305,7 @@ export default async function Home() {
             </h2>
           </div>
           <Button asChild>
-            <Link href="mailto:mrufahmed@example.com">
+            <Link href="mailto:marufdev09@gmail.com">
               <Mail className="h-4 w-4" />
               Email Me
             </Link>
